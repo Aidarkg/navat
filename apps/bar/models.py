@@ -35,6 +35,13 @@ class Drinks(Base):
 
 
 class Tea(Base):
+    UNIT_CHOICES = [
+        ('pcs', 'Штук'),
+        ('blk', 'Пачка'),
+    ]
+
+    unit = models.CharField('Единица измерения', max_length=3, choices=UNIT_CHOICES, default='pcs')
+
     def __str__(self):
         return self.title
 
