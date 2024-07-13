@@ -4,9 +4,9 @@ from .models import Syrup, Drinks, Tea, Coffee
 
 class BaseAdmin(admin.ModelAdmin):
     list_display = ('title', 'quantity', 'unit', 'updated_at')
-    list_display_links = None
+    list_display_links = ('title',)
     list_filter = ('title', 'unit', 'updated_at')
-    list_editable = ('title', 'quantity', 'unit')
+    list_editable = ('quantity', 'unit')
 
     fields = ('title', 'quantity', 'unit', 'updated_at')
     readonly_fields = ('updated_at',)
