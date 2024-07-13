@@ -31,6 +31,8 @@ class CoffeeAdmin(BaseAdmin):
 class AlcoholAdmin(admin.ModelAdmin):
     list_display = ('title', 'quantity', 'unit', 'category', 'updated_at')
     list_display_links = ('title',)
+    list_filter = ('category',)
+    search_fields = ('title', 'category')
     list_editable = ('quantity', 'unit', 'category')
     ordering = ('-updated_at',)
 
