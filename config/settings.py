@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-
+from .jazzmin import *
 from decouple import config
 
 BASE_DIR = Path(__file__).resolve().parent.parent
