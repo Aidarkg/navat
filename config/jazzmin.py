@@ -81,15 +81,7 @@ JAZZMIN_SETTINGS = {
 
     # Список приложений (и/или моделей) для определения порядка бокового меню (не обязательно включать все приложения/модели)
     "order_with_respect_to": [
-        'moderator',
-        "auth",
-        'contacts', 'contacts.ArchiveContact', 'information.AboutArchive',
-        'information', 'information.Logo', 'information.VideoData',
-        'information.VideoLink', 'information.PhotoGallery',
-        'information.PhotoHome', 'information.KODEKS',
-        'information.Organization', 'information.News',
-        'information.Management', 'information.Service', 'information.PriceList',
-        'faq'
+        'auth', 'bar.Drinks', 'bar.Syrup', 'bar.Alcohol', 'bar.Beer', 'bar.Tea', 'bar.Coffee'
     ],
 
     # Пользовательские ссылки для добавления в группы приложений, сгруппированные по имени приложения
@@ -108,6 +100,11 @@ JAZZMIN_SETTINGS = {
         "auth.user": "fas fa-user",
         "auth.Group": "fas fa-users",
         "bar.Syrup": "fas fa-wine-bottle",
+        "bar.Drinks": "fas fa-cocktail",  # иконка для модели Drinks
+        "bar.Alcohol": "fas fa-wine-glass-alt",  # иконка для модели Alcohol
+        "bar.Beer": "fas fa-beer",  # иконка для модели Beer (если есть)
+        "bar.Tea": "fas fa-mug-hot",  # иконка для модели Tea
+        "bar.Coffee": "fas fa-coffee",  # иконка для модели Coffee
     },
 
     # Значки, которые используются, когда не указаны вручную

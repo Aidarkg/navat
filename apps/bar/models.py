@@ -50,3 +50,34 @@ class Coffee(Base):
     class Meta:
         verbose_name = 'Кофе'
         verbose_name_plural = 'Кофе'
+
+
+class Alcohol(Base):
+    CATEGORY_CHOICES = [
+        ('vodka', 'Водка'),
+        ('vodka_flavored', 'Настроение водка'),
+        ('whiskey', 'Виски'),
+        ('liqueur', 'Ликер'),
+        ('rum', 'Ром'),
+        ('cognac', 'Коньяк'),
+        ('tequila', 'Текила'),
+        ('wine', 'Вино'),
+    ]
+
+    category = models.CharField('Категория', max_length=20, choices=CATEGORY_CHOICES)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Алкоголь'
+        verbose_name_plural = 'Алькоголь'
+
+
+class Beer(Base):
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Пиво'
+        verbose_name_plural = 'Пива'
