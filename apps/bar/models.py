@@ -62,7 +62,6 @@ class Coffee(Base):
 class Alcohol(Base):
     CATEGORY_CHOICES = [
         ('vodka', 'Водка'),
-        ('vodka_flavored', 'Настроение водка'),
         ('whiskey', 'Виски'),
         ('liqueur', 'Ликер'),
         ('rum', 'Ром'),
